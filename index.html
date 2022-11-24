@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>백지훈 포트폴리오</title>
+  <!--  css -->
+  <link rel="stylesheet" href="./css/main.css" type="text/css">
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js" integrity="sha512-Eenw6RBFiF4rO89LCaB5fkd4WXI4Y7GSRxrLMMWx73dZNcl+dBU3/pJtITD2gTCoEGIf/Ph3spwp0zZnF+UEJg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+  <!-- 헤더 시작 -->
+  <header>
+    <!-- 사이드 고정 메뉴 -->
+    <aside>
+      <div class="line line_top"></div>
+      <h1>
+        <a href="index.html" title="메인페이지 바로가기"><img src="./img/Logo.png" alt=""></a>
+      </h1>
+      <div class="line line_mid"></div>
+      <ul class="side_gnb">
+        <li class="selec"><a href="#" onclick="return false" title="첫화면 바로가기" id="first-button">Main</a></li>
+
+        <li class=""><a href="#" onclick="return false" title="어바웃 미" id="about-button">About Me</a></li>
+
+        <li><a href="#" onclick="return false" title="활용 가능한 스킬 보러가기" id="skill-button">My Skills</a></li>
+
+        <li><a href="#" onclick="return false" title="프로젝트 보러가기" id="project-button">Project</a></li>
+
+        <li><a href="" onclick="return false" title="연락처 바로가기" id="contact-butoon">Contact</a></li>
+        
+      </ul>
+      <div class="line line_bottom"></div>
+    </aside>
+  </header>
+
+  <!-- 메인 시작 -->
+  <main>
+    <!-- *모달 만들기 -->
+    <div id="modal">
+      <div class="modal-inner">
+        <div class="text_box">
+          <h2>NOTICE!</h2>
+          <p>
+            본 사이트는 상업적 목적이 아닌 개인적 포트폴리오 용도로
+            제작되었으며, 1920*1080 해상도에 최적화 되어 있습니다.
+            <br><br>
+            또한 일부 내용 및 이미지 등은 출처가 따로 있음을 밝힙니다.
+          </p>
+        </div>
+        <button class="close-btn" onclick="closeModal()">OK</button>
+      </div>
+    </div>
+
+    <!-- *메인화면 -->
+    <article id="first">
+      <div class="bg">
+        <div class="inner">
+          <p>
+            2022 <br>백지훈 <br>
+            Web Portfolio
+          </p>
+
+          <h2>
+            Design <span>&</span><br>
+            Programming
+          </h2>
+          <p class="subtitle">디자인&웹&영상</p>
+          <img src="./img/Logo.png" alt="텅텅 캐릭터" id="big_tung">
+          <img src="./img/1060_arrow.png" alt="1060화살표" id="arrow">
+          <span>1060px</span>
+
+          <div class="shortcut_project">
+            <a href="" onclick="return false" title="프로젝트바로가기">Project shortcut</a>
+          </div>
+          <i class="fas fa-angles-down"></i>
+        </div>
+      </div>
+    </article>
+
+    <!-- *나에 대해 -->
+    <article id="about">
+      <div class="bg">
+        <div class="yellowbox">
+          <p>
+            성공한 사람이 되려고 노력하기보다 가치있는 사람이 되려고 노력하라.
+            – 알베르트 아인슈타인
+          </p>
+          <p>
+            Try not to become a man of success but rather to become a man of
+            value. - Albert Einstein
+          </p>
+        </div>
+
+        <div class="inner">
+          <h2>About Me</h2>
+
+          <div class="img-box">
+            <div class="imgbox"></div>
+            <p>회사에 도움이 되는 일원이 되도록 노력하겠습니다.</p>
+          </div>
+          <div class="text-wrap">
+            <div class="text-box one">
+              <h3>PROFILE</h3>
+              <span>저는</span>
+              <div class="horizontal-line"></div>
+              <p><i>Name</i> : 백지훈 / <i>Baik Ji-hoon</i></p>
+              <p><i>Birth</i> : 2004.09.20</p>
+              <p><i>Phone</i> : 010-2782-6646</p>
+              <p><i>Mail</i> : <i>Backjihoon0920@gmail.com</i></p>
+              <p><i>Hobby</i> : 게임, 영상시청, 소설 읽기 / <i>Game, Watch video, 
+                read a novel</i></p>
+            </div>
+            <div class="text-box two">
+              <h3>CERTIFICATE</h3>
+              <span>자격증</span>
+              <div class="horizontal-line"></div>
+              <p><i>ITQ</i> 엑셀(<i>Excel</i>) <i>A</i>등급</p>
+              <p><i>GTQ</i>(그래픽스 기술자격) 1급</p>
+              <p>컴퓨터그래픽스 운용기능사</p>
+            </div>
+          </div>
+          <img src="./img/Untitled-1.png" alt="텅텅설명">
+        </div>
+      </div>
+    </article>
+
+    <!-- *스킬 -->
+    <article id="my_skill">
+      <div class="bg">
+        <div class="inner">
+          <h2>MY SKILLS</h2>
+          <div class="skill">
+            <span>웹</span>
+            <div class="horizontal-line"></div>
+
+            <ul class="web_skill-wrapper">
+              <li>
+                <!-- html skill -->
+                <div class="html_skill">
+                  <img src="./img/skill_logo/html5.png" alt="html5로고">
+                  <span>HTML</span>
+                  <!-- skill바 아래 -->
+                  <div class="skillbg"></div>
+                  <!-- skill바 위 -->
+                  <div class="skillover"></div>
+                </div>
+              </li>
+
+              <li>
+                <!-- css skill -->
+                <div class="css_skill">
+                  <img src="./img/skill_logo/CSS3_logo_and_wordmark.png" alt="css로고">
+                  <span>CSS</span>
+                  <!-- skill바 아래 -->
+                  <div class="skillbg"></div>
+                  <!-- skill바 위 -->
+                  <div class="skillover"></div>
+                </div>
+              </li>
+
+              <li>
+                <!-- js skill -->
+                <div class="js_skill">
+                  <img src="./img/skill_logo/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png"
+                    alt="js 로고">
+                  <span>JS</span>
+                  <!-- skill바 아래 -->
+                  <div class="skillbg"></div>
+                  <!-- skill바 위 -->
+                  <div class="skillover"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="react_skill">
+                  <img src="./img/skill_logo/React-icon.png" alt="리액트 로고">
+                  <span>React</span>
+                  <!-- skill바 위 -->
+                  <div class="skillover"></div>
+                  <!-- skill바 아래 -->
+                  <div class="skillbg"></div>
+                </div>
+              </li>
+
+              <li>
+                <div class="figma_skill">
+                  <img src="./img/skill_logo/figma.png" alt="피그마 로고">
+                  <span>Figma</span>
+                  <!-- skill바 위 -->
+                  <div class="skillover"></div>
+                  <!-- skill바 아래 -->
+                  <div class="skillbg"></div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="video_skill-wrapper">
+            <span>영상&디자인</span>
+            <div class="horizontal-line"></div>
+            <ul>
+              <li class="a_e-skill">
+                <img src="./img/skill_logo/Adobe_After_Effects_CC_icon.png" alt="에프터이펙트 아이콘">
+                <span>Ae</span>
+                <!-- skill바 아래 -->
+                <div class="skillbg"></div>
+                <!-- skill바 위 -->
+                <div class="skillover"></div>
+              </li>
+
+              <li class="pr-skill">
+                <img src="./img/skill_logo/Adobe_Premiere_Pro_CC_icon.png" alt="에프터이펙트 아이콘">
+                <span>Pr</span>
+                <!-- skill바 아래 -->
+                <div class="skillbg"></div>
+                <!-- skill바 위 -->
+                <div class="skillover"></div>
+              </li>
+
+              <li class="a_i-skill">
+                <img src="./img/skill_logo/illustrator.png" alt="에프터이펙트 아이콘">
+                <span>Ai</span>
+                <!-- skill바 아래 -->
+                <div class="skillbg"></div>
+                <!-- skill바 위 -->
+                <div class="skillover"></div>
+              </li>
+
+              <div class="right_content">
+                <li class="p_s-skill">
+                  <img src="./img/skill_logo/Adobe_Photoshop_CC_icon.png" alt="에프터이펙트 아이콘">
+                  <span>Ps</span>
+                  <!-- skill바 아래 -->
+                  <div class="skillbg"></div>
+                  <!-- skill바 위 -->
+                  <div class="skillover"></div>
+                </li>
+
+                <li class="c4d-skill">
+                  <img src="./img/skill_logo/Cinema-4D-Logo.png" alt="에프터이펙트 아이콘">
+                  <span>C4D</span>
+                  <!-- skill바 아래 -->
+                  <div class="skillbg"></div>
+                  <!-- skill바 위 -->
+                  <div class="skillover"></div>
+                </li>
+              </div>
+            </ul>
+          </div>
+
+          <div class="education-wrapper">
+            <h3>Education</h3>
+            <span>교육</span>
+            <div class="horizontal-line"></div>
+            <p>그린컴퓨터학원 - 2022.08.16~2022.11.28</p>
+            <p>서울디자인고등학교 영상디자인과 - 2020.03~2023.02</p>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Project -->
+    <article id="project">
+      <div class="bg">
+        <div class="inner">
+          <h2>Project-Web</h2>
+          <div class="web_project-wrapper project-wrapper">
+            <div class="web-slide slide">
+              <figure>
+                <a href="https://tungx2.github.io/baskkinrobbins/08implement/index.html" title="베스킨라빈스 사이트 바로가기" target="_blank">
+                  <img src="./img/mockup/baskinrobbins_mockup.png" alt="베스킨 목업">
+                  <figcaption>
+                    베스킨라빈스 홈페이지 <br>
+                    첫프로젝트/ 반응형 / 제작기간 : 약 14일<br>
+                    HTML, CSS, jQuery slide
+                  </figcaption>
+                </a>
+              </figure>
+
+              <figure>
+                <a href="https://tungx2.github.io/conversepc/" title="컨버스 사이트 바로가기" target="_blank">
+                  <img src="./img/mockup/converse_mockup.jpg" alt="컨버스 목업">
+                  <figcaption>
+                    컨버스 쇼핑몰<br>
+                    두번째 프로젝트 / PC / 제작기간 : 약 9일 <br>
+                    HTML, CSS, javascript
+                  </figcaption>
+                </a>
+              </figure>
+
+              <figure>
+                <a href="https://tungx2.github.io/heropy-coffee/" title="헤로피커피 바로가기" target="_blank">
+                  <img src="./img/mockup/heropy_mockup.jpg" alt="헤로피">
+                  <figcaption>
+                    헤로피커피 클론코딩 <br>
+                    클론코딩 / PC / 제작기간 : 약 3일
+                  </figcaption>
+                </a>
+              </figure>
+            </div>
+            <i class="fas fa-angle-left prev"></i>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          
+          <div class="video_project-wrap">
+          <h2>Project-Video</h2>
+          <div class="video_project-wrapper project-wrapper">
+            <div class="video-slide slide">
+              <figure id="school_safety" onclick="getId(this)">
+                <img src="./img/schoolsafe.png" alt="학교안전공모전">
+                <figcaption>
+                  학교안전 공모전 - 서울특별시 안전공제회<br>
+                  Ae, Pr, Ai, 다빈치 리졸브 / 제작기간 : 약 6일<br>
+                  기획,촬영,편집 참여<br>
+                  다빈치 리졸브를 사용해 색보정 시도<br>
+                  팀 단위 공모전, 동상 수상 
+                </figcaption>
+              </figure>
+
+              <figure id="money_rush" onclick="getId(this)">
+                <img src="./img/money.png" alt="학교안전공모전">
+                <figcaption>
+                  머니러쉬<br>
+                  Ai,Ps,Ae,Pr / 제작기간 : 약 14일 <br>
+                  들어가는 모든 요소 <br>
+                  포토샵과 일러스트를 사용해 제작
+                </figcaption>
+              </figure>
+
+              <figure id="rainbowsix" onclick="getId(this)">
+                <img src="./img/rainbow.png" alt="레인보우식스 시즈 영상">
+                <figcaption>
+                  레인보우 식스 시즈 오퍼 소개 영상<br>
+                  Ai,Ps,Ae / 제작기간 약 7일 <br>
+                  레인보우식스시즈라는 게임의<br>
+                  오퍼레이터 소개 영상<br>
+                  포토샵을 사용해 텍스트 질감표현
+                </figcaption>
+              </figure>
+
+              <figure id="electronic_waste" onclick="getId(this)">
+                <img src="./img/elec.png" alt="폐전자제품영상">
+                <figcaption>
+                  폐전자제품쓰레기<br>
+                  Ai,Ps,Ae / 제작기간 약 7일<br>
+                  첫 인포그래픽 영상.들어가는 모든 요소<br>
+                  일러스트를 사용해 제작
+                </figcaption>
+              </figure>
+
+              
+            </div>
+            <i class="fas fa-angle-left prev2"></i>
+            <i class="fas fa-angle-right next2"></i>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- 머니러시 -->
+      <div class="iframe_modal">
+        
+      </div>
+    </article>
+
+    <article id="contact">
+      <div class="bg">
+        <div class="inner">
+          <h2>CONTACT</h2>
+          <div class="icon-box">
+            <a href="https://www.instagram.com/mu.neun9/" title="인스타 바로가기" target="_blank"><i class="fa-brands fa-instagram icon"></i><p>@mu.neun9</p></a>
+
+            <a href="mailto:backjihoon0920@gmail.com" title="메일 보내기"><i class="fa-regular fa-envelope icon"></i><p>backjihoon0920@gmail.com</p></a>
+
+            <a href="sms:010-2782-6646" title="메세지 보내기"><i class="fa-regular fa-address-book icon"></i><p>01027826646</p></a>
+
+            <a href="https://discord.com" title="디스코드 바로가기" target="_blank"><i class="fa-brands fa-discord icon"></i><p>텅텅#8806</p></a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <!-- 푸터 시작 -->
+  <footer>
+    <address>&copy; Ji Hoon 2022</address>
+  </footer>
+
+  <script>
+    // 모달
+
+    // 프로젝트
+    const projectBox = document.querySelector("figure");
+    const projectImg = document.querySelector("figure img");
+
+    // 모달
+    const closeModal = () => {
+      const modal = document.getElementById("modal");
+      modal.style.display = "none";
+      return false;
+    };
+  </script>
+  <script src="./script/slide.js"></script>
+  <script src="./script/button.js"></script>
+</body>
+
+</html>
