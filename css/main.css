@@ -422,17 +422,16 @@ main #my_skill h2 {
 main #my_skill .bg .inner {
     padding-top: 112px;
 }
+.skill {
+    padding-top: 12.9%;
+    margin-bottom: 100px;
+}
 
 main #my_skill .skill>span {
     font-size: 15px;
     line-height: 20px;
     color: #ccc;
 }
-
-.skill {
-    padding-top: 15%;
-}
-
 .web_skill-wrapper,
 .video_skill-wrapper {
     margin-bottom: 55px;
