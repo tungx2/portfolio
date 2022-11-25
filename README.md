@@ -1,2 +1,8 @@
 # Portfolio
-웹프론트엔드 개발자로 가는 웹퍼블리셔 포트폴리오
+- 👋 Hi, I’m Baik Ji Hoon
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning HTML,CSS,JS 
+- 📫 How to reach me 
+-  1. Instagram @mu.neung
+-  2. Mail backjihoon0920@gmail.com
+-  3. Discord 텅텅#8806
