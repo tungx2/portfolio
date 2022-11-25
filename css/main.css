@@ -46,7 +46,13 @@ header aside .side_gnb li {
 header aside .side_gnb li a {
     color: #ffffff;
 }
-
+header aside .side_gnb li.selec{
+    background-color: #FFE91F;
+    line-height: 35px;  
+    padding: 0;
+    margin-bottom: 10px;
+    border-radius: 0px 60px 60px 0px;
+}
 header aside .side_gnb li.selec a {
     font-size: 20px;
     font-weight: 800;
@@ -740,7 +746,7 @@ i.fas.fa-times{
 }
 .iframe_modal h2{
     text-align: center;
-    margin-top: 30px;
+    margin-top: 90px;
     font-size: 20px;
     color: #E9E8D4;
     text-transform:capitalize;
