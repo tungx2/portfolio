@@ -14,7 +14,6 @@ projectShort.addEventListener('click',function(){
   
 });
 
-
 contactGnb.addEventListener('click',function(){
   gsap.to(window,.6,{
     scrollTo:4320
@@ -29,13 +28,13 @@ projectGnb.addEventListener('click',function(){
 
 mySkillGnb.addEventListener('click',function(){
   gsap.to(window,.6,{
-    scrollto:2160
+    scrollTo:2160
   })
 });
 
 aboutGnb.addEventListener('click',function(){
   gsap.to(window,.6,{
-    scrollto:1080
+    scrollTo:1080
   })
 });
 
@@ -44,4 +43,4 @@ firstGnb.addEventListener('click',function(){
     scrollTo:0
   })
 });
-                          
+

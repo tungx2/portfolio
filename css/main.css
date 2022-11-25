@@ -34,7 +34,7 @@ header aside .side_gnb {
     position: relative;
     width: 110px;
     text-align: center;
-    font-size: 15px;
+    font-size: 18px;
     margin-top: 50vh;
     transform: translateY(-50%);
 }
@@ -47,13 +47,6 @@ header aside .side_gnb li a {
     color: #ffffff;
 }
 
-header aside .side_gnb li.selec {
-    background-color: #FFE91F;
-    line-height: 35px;
-    padding: 0;
-    margin-bottom: 10px;
-    border-radius: 0px 60px 60px 0px;
-}
 
 header aside .side_gnb li.selec a {
     font-size: 20px;
