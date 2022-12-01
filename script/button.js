@@ -48,3 +48,7 @@ easterEgg.addEventListener('click',function(){
   console.log('설마하고 넣었는데 누르셨군요!! 안녕하세요. 백지훈입니다. 항상 행복하시고 제 포트폴리오 사이트에 방문해주셔서 감사합니다');
 });
 
+function enterKey() {
+	if (window.event.keyCode == 13) {
+    }
+}
